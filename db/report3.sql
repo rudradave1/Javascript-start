@@ -1,0 +1,1 @@
+SELECT SUM(u_amount) AS 'total_revenue' FROM `u_wallet` uw, transaction_data td WHERE td.transaction_id = uw.transaction_id group by week(td.timestamp);

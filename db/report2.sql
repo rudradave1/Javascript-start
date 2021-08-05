@@ -1,0 +1,1 @@
+SELECT SUM(dw.d_amount) AS 'driver_amount' FROM `transaction_data` td,d_wallet dw WHERE td.timestamp >= '2020-02-25' AND td.timestamp <= '2020-02-25' AND td.transaction_id = dw.transaction_id AND td.driver_id = 'DID1'
