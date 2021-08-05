@@ -49,6 +49,7 @@ $("#phone button").bind("mousedown", function() {
 });
 
 function t9(button_pressed) {
+  console.log('hell');
   return keys[button_pressed][counter % keys[button_pressed].length];
 }
 
